@@ -1,4 +1,64 @@
-body {
-  background-color: maroon;
-  font-size: 130%;
+* {
+  box-sizing: border-box;
+}
+
+p {
+	overflow: hidden;
+	clear: right;
+	background: grey;
+}
+
+div {
+  color: black;
+  background: grey;
+  margin: 0.5%;
+  border: 3px solid black;
+}
+
+div > div {
+  text-align: right;
+  float: right;
+}
+
+div.cl-1 > div {
+  background: yellow;
+}
+
+div.cl-2 > div {
+  background: red;
+}
+
+div.cl-3 > div {
+  background: orange;
+}
+
+h1{
+	text-align: center;
+}
+/********** Large devices only **********/
+
+@media (min-width: 992px) {
+  .cl-1, .cl-2, .cl-3{
+   width: 31.5%;
+   float: left;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .cl-1, .cl-2, .cl-3{
+  	float: left;
+  }
+
+  .cl-1, .cl-2 {
+    width: 49%;
+  }
+
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+  
 }
