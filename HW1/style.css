@@ -1,15 +1,15 @@
 * {
   box-sizing: border-box;
+  text-transform: fantasy;
 }
 
 p {
 	overflow: hidden;
 	clear: right;
-	background: grey;
+	height: 147px;
 }
 
 div {
-  color: black;
   background: grey;
   margin: 0.5%;
   border: 3px solid black;
@@ -18,6 +18,7 @@ div {
 div > div {
   text-align: right;
   float: right;
+  font-size: 125%;
 }
 
 div.cl-1 > div {
@@ -34,30 +35,26 @@ div.cl-3 > div {
 
 h1{
 	text-align: center;
+	font-size: 175%;
 }
 /********** Large devices only **********/
 
 @media (min-width: 992px) {
-  .cl-1, .cl-2, .cl-3{
+  .cl-1, .cl-2, .cl-3 {
    width: 31.5%;
    float: left;
   }
 }
-
-
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   
-  .cl-1, .cl-2, .cl-3{
+  .cl-1, .cl-2, .cl-3 {
   	float: left;
   }
-
   .cl-1, .cl-2 {
     width: 49%;
   }
-
 }
-
 /********** Mobile devices only **********/
 @media (max-width: 767px) {
   
